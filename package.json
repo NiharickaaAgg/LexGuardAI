@@ -1,0 +1,14 @@
+{
+  "name": "lexguard-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail --names \"NODE,PYTHON,NEXT\" --prefix-colors \"cyan,magenta,blue\" \"npm run node\" \"npm run python\" \"npm run next\"",
+    "node": "cd backend-node && node server.js",
+    "python": "cd backend-python && venv\\Scripts\\activate && uvicorn main:app --reload --port 8000",
+    "next": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

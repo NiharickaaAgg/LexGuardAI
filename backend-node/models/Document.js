@@ -9,8 +9,8 @@ const documentSchema = new mongoose.Schema(
         size: { type: Number, required: true },
         docType: {
             type: String,
-            enum: ['rental_agreement', 'employment_contract', 'trade_invoice', 'nda', 'service_agreement', 'loan_agreement', 'partnership_deed', 'other'],
-            default: 'other',
+            enum: ['other', 'employment', 'rental', 'nda', 'service', 'trade', 'financial'],
+            default: 'other'
         },
         region: { type: String, enum: ['national', 'international'], default: 'national' },
         country: { type: String, default: 'IN' },
