@@ -30,3 +30,7 @@ venv.bak/
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Uploads
+backend-node/uploads/*
+!backend-node/uploads/.gitkeep
