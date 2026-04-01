@@ -19,6 +19,7 @@ venv/
 .venv/
 env.bak/
 venv.bak/
+chroma_db/
 
 # Environment Variables
 .env
